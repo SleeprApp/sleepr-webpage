@@ -1,231 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sleepr — Privacy Policy</title>
-  <style>
-    :root { --navy:#1a2a4a; --slate:#3d4f6b; --rule:#cfd6e2; --bg:#f4f6fb; }
-    * { box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 760px; margin: 0 auto; padding: 32px 20px 64px;
-      color: #1a1a1a; line-height: 1.6; background: #fff;
-    }
-    h1 { color: var(--navy); font-size: 28px; margin-bottom: 4px; }
-    h2 { color: var(--navy); font-size: 19px; margin-top: 32px; }
-    h3 { color: var(--navy); font-size: 15px; margin-top: 20px; margin-bottom: 4px; }
-    .meta { color: var(--slate); font-size: 14px; margin-bottom: 24px; }
-    .controller {
-      background: var(--bg); border: 1px solid var(--rule); border-radius: 8px;
-      padding: 16px 20px; margin: 16px 0 8px; font-size: 14px;
-    }
-    .controller dt { font-weight: 600; color: var(--navy); }
-    .controller dd { margin: 0 0 8px 0; }
-    .controller dd:last-child { margin-bottom: 0; }
-    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
-    th { background: var(--navy); color: #fff; text-align: left; padding: 8px 10px; }
-    td { padding: 8px 10px; border: 1px solid var(--rule); vertical-align: top; }
-    tr:nth-child(even) td { background: var(--bg); }
-    a { color: var(--navy); }
-    .download {
-      display: inline-block; margin-top: 8px; padding: 8px 14px;
-      background: var(--navy); color: #fff; text-decoration: none; border-radius: 6px;
-      font-size: 14px;
-    }
-    ul { padding-left: 22px; }
-    li { margin-bottom: 6px; }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex">
+	<meta http-equiv="refresh" content="0; url=https://sleeprapp.org/privacy">
+	<link rel="canonical" href="https://sleeprapp.org/privacy">
+	<title>Sleepr — Privacy Policy has moved</title>
+	<style>
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+			max-width: 560px;
+			margin: 80px auto;
+			padding: 0 20px;
+			color: #1a1a1a;
+			line-height: 1.6;
+			text-align: center;
+		}
+		h1 { font-size: 22px; color: #1a2a4a; margin-bottom: 12px; }
+		p { color: #3d4f6b; }
+		.cta {
+			display: inline-block;
+			margin-top: 16px;
+			padding: 10px 20px;
+			background: #1a2a4a;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 8px;
+		}
+	</style>
 </head>
 <body>
-
-  <h1>Privacy Policy for Sleepr</h1>
-  <p class="meta">Effective date: 28 April 2026 &nbsp;|&nbsp; Last updated: 28 April 2026</p>
-
-  <p>This Privacy Policy explains how <strong>Mads Media</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or
-  &ldquo;our&rdquo;) collects, uses, and protects personal data when you use the
-  <strong>Sleepr</strong> mobile application (the &ldquo;App&rdquo;). We are the data controller for
-  the personal data described in this policy under Regulation (EU) 2016/679 (the
-  &ldquo;GDPR&rdquo;) and the Danish Data Protection Act (<em>databeskyttelsesloven</em>).</p>
-
-  <dl class="controller">
-    <dt>Data controller</dt><dd>Mads Media</dd>
-    <dt>CVR number</dt><dd>46062299</dd>
-    <dt>Address</dt><dd>2500 Valby, Denmark</dd>
-    <dt>Contact email</dt><dd><a href="mailto:sleeprsupport@gmail.com">Sleeprsupport@gmail.com</a></dd>
-  </dl>
-
-  <p><a class="download" href="Sleepr_Privacy_Policy.pdf">Download PDF version</a></p>
-
-  <h2>1. Summary &mdash; what you should know</h2>
-  <ul>
-    <li>Sleepr records audio from your device&rsquo;s microphone overnight to detect snoring,
-      coughs, talking, and movement, and to estimate sleep stages.
-      <strong>Audio is processed entirely on your device and is never uploaded to our servers.</strong></li>
-    <li>If you grant permission, Sleepr reads your sleep and heart-rate data from Apple Health
-      to enrich your nightly summary, and can write tracked sleep sessions back to Apple Health.</li>
-    <li>We use Supabase as our backend to store your account, profile, sleep session summaries
-      (numerical metrics &mdash; not raw audio), friend connections, and leaderboard entries.</li>
-    <li>Our in-app sleep coach (&ldquo;Somnus&rdquo;) sends your messages and a small summary of your
-      sleep metrics to Anthropic via our backend so the model can reply.</li>
-    <li>We do not sell your personal data. We do not show third-party advertising in the App.</li>
-  </ul>
-
-  <h2>2. Data we collect and how we use it</h2>
-
-  <h3>2.1 Account and profile data</h3>
-  <p>When you sign in with Apple or Google, we receive a stable user identifier and, depending on
-  your provider settings, your email address and display name. We store these in our
-  <strong>profiles</strong> table on Supabase together with preferences you set in the App (such as
-  your sleep goal, time zone, notification preferences, and avatar).</p>
-  <p><strong>Legal basis (GDPR Art. 6):</strong> performance of the contract you enter into when
-  you create an account (Art. 6(1)(b)).</p>
-
-  <h3>2.2 Sleep session data</h3>
-  <p>For each tracked night, Sleepr stores a <strong>summary</strong> of the session: start and end
-  time, estimated time in bed, estimated sleep duration, an estimated sleep-quality score, counts
-  of detected events (snoring, coughs, talking, movement), and an estimated sleep-stage breakdown.
-  Raw audio recordings stay on your device and are deleted after analysis; only the aggregated
-  numerical results are synchronised to your account.</p>
-  <p><strong>Legal basis:</strong> performance of the contract (Art. 6(1)(b)).</p>
-
-  <h3>2.3 Apple Health data</h3>
-  <p>If you grant HealthKit permission, Sleepr reads sleep analysis and heart-rate samples from
-  Apple Health to enrich your nightly summary. With your permission, Sleepr also writes your
-  tracked sleep sessions to Apple Health. HealthKit data is processed on your device and is
-  <strong>not</strong> transmitted to our servers. You can revoke access at any time in iOS
-  Settings &gt; Health &gt; Data Access &amp; Devices &gt; Sleepr.</p>
-  <p><strong>Legal basis:</strong> your explicit consent for processing of health data
-  (Art. 9(2)(a) GDPR), given through the iOS HealthKit prompt.</p>
-
-  <h3>2.4 Microphone data</h3>
-  <p>When you start a sleep session, Sleepr listens through your device&rsquo;s microphone to detect
-  events relevant to sleep quality. The audio is analysed in real time on-device by our audio
-  engine and the resulting event counts and timestamps are saved locally. The audio itself is
-  never stored in long-term form on the device and is never uploaded to our servers or to any
-  third party.</p>
-  <p><strong>Legal basis:</strong> your explicit consent given through the iOS microphone
-  permission prompt (Art. 6(1)(a) GDPR).</p>
-
-  <h3>2.5 Sleep coach (Somnus) chat data</h3>
-  <p>If you use the in-app chat coach, your messages are sent to our Supabase Edge Function, which
-  forwards them &mdash; together with a small context block containing your first name and aggregate
-  sleep metrics (e.g. average quality, average duration, current streak, bedtime variance, primary
-  sleep pattern) &mdash; to Anthropic&rsquo;s API for a reply. Anthropic processes the request as our
-  processor under their commercial terms and does not use the content to train their models.</p>
-  <p><strong>Legal basis:</strong> performance of the contract (Art. 6(1)(b)).</p>
-
-  <h3>2.6 Friends, leaderboards, and referrals</h3>
-  <p>If you add friends or appear on a leaderboard, your display name, avatar, and aggregated score
-  are visible to other users you are connected with. If you accept or share a referral code, we
-  store a record of the referral relationship to award the corresponding reward.</p>
-  <p><strong>Legal basis:</strong> performance of the contract (Art. 6(1)(b)) and our legitimate
-  interest in operating the social and referral features (Art. 6(1)(f)).</p>
-
-  <h3>2.7 Subscription data</h3>
-  <p>Subscriptions are processed by Apple through StoreKit and the App Store. We do not receive or
-  store your payment-card information. We receive only an anonymous transaction identifier and
-  your current subscription status, which we use to unlock premium features.</p>
-  <p><strong>Legal basis:</strong> performance of the contract (Art. 6(1)(b)).</p>
-
-  <h3>2.8 Notifications and diagnostic data</h3>
-  <p>If you grant notification permission, we use Apple&rsquo;s push notification service to send
-  sleep reminders and smart-alarm alerts. We may also process basic diagnostic information &mdash;
-  such as a crash log or an error code &mdash; to keep the App working. We do not use third-party
-  analytics or advertising SDKs.</p>
-  <p><strong>Legal basis:</strong> our legitimate interest in operating and improving the App
-  (Art. 6(1)(f)), and your consent for notifications (Art. 6(1)(a)).</p>
-
-  <h2>3. Who we share data with (sub-processors)</h2>
-  <p>We share personal data only with the service providers we need to run Sleepr. Each provider
-  acts as our data processor under a written agreement and may only process your data on our
-  instructions.</p>
-
-  <table>
-    <thead>
-      <tr><th>Provider</th><th>Purpose</th><th>Location</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Supabase</td><td>Authentication, profile and sleep-session storage, friends and leaderboards, edge functions</td><td>EU / US</td></tr>
-      <tr><td>Apple</td><td>Sign in with Apple, push notifications, HealthKit, App Store subscriptions</td><td>EU / US</td></tr>
-      <tr><td>Google</td><td>Google Sign-In (only if you choose this method)</td><td>EU / US</td></tr>
-      <tr><td>Anthropic</td><td>Sleep-coach chat replies (Somnus)</td><td>US</td></tr>
-    </tbody>
-  </table>
-
-  <p>We do not sell your personal data and we do not share it with advertising networks or data brokers.</p>
-
-  <h2>4. International transfers</h2>
-  <p>Some of our processors (notably Anthropic, and parts of Supabase, Apple, and Google) may
-  process data outside the European Economic Area, including in the United States. Where this is
-  the case, the transfer is safeguarded by either (i) an adequacy decision of the European
-  Commission, or (ii) the EU Standard Contractual Clauses adopted by the European Commission,
-  supplemented where necessary by additional technical and organisational measures. You can
-  request a copy of the relevant safeguards by emailing us at the address above.</p>
-
-  <h2>5. How long we keep your data</h2>
-  <ul>
-    <li><strong>Account and profile data</strong> &mdash; for as long as your account is active.
-      When you delete your account, we delete or anonymise associated data within 30 days, except
-      where we are required to retain it (for example for accounting purposes under Danish
-      bookkeeping law, currently 5 years).</li>
-    <li><strong>Sleep session summaries</strong> &mdash; until you delete the session in the App or
-      delete your account.</li>
-    <li><strong>Microphone audio</strong> &mdash; discarded continuously during analysis; never
-      retained beyond the live session.</li>
-    <li><strong>Chat history with Somnus</strong> &mdash; kept for as long as your account is
-      active so the coach has context. You can clear the chat at any time in the App.</li>
-    <li><strong>Subscription transaction records</strong> &mdash; kept for as long as required by
-      Danish tax and accounting law.</li>
-  </ul>
-
-  <h2>6. Your rights under the GDPR</h2>
-  <p>You have the following rights regarding your personal data:</p>
-  <ul>
-    <li><strong>Right of access</strong> &mdash; to obtain a copy of the personal data we hold about you (Art. 15).</li>
-    <li><strong>Right to rectification</strong> &mdash; to have inaccurate data corrected (Art. 16).</li>
-    <li><strong>Right to erasure</strong> &mdash; to have your data deleted (&ldquo;right to be forgotten&rdquo;) (Art. 17).</li>
-    <li><strong>Right to restriction</strong> &mdash; to limit how we process your data (Art. 18).</li>
-    <li><strong>Right to data portability</strong> &mdash; to receive your data in a structured, machine-readable format (Art. 20).</li>
-    <li><strong>Right to object</strong> &mdash; to processing based on our legitimate interests (Art. 21).</li>
-    <li><strong>Right to withdraw consent</strong> &mdash; at any time, without affecting the lawfulness of prior processing (Art. 7(3)).</li>
-  </ul>
-
-  <p>To exercise any of these rights, email us at
-  <a href="mailto:Madsthorsen76@gmail.com">Madsthorsen76@gmail.com</a>.
-  We will respond within one month, as required by Art. 12(3) GDPR.</p>
-
-  <p>You also have the right to lodge a complaint with the Danish Data Protection Agency
-  (<em>Datatilsynet</em>) &mdash; Carl Jacobsens Vej 35, 2500 Valby, Denmark &mdash; or any other
-  supervisory authority in the EU/EEA.</p>
-
-  <h2>7. How we protect your data</h2>
-  <p>We use industry-standard measures to protect your data: TLS encryption for data in transit,
-  encryption at rest on our backend, row-level security policies on the database, and the
-  principle of least privilege for access to production data. Our backend secrets &mdash; including
-  the Anthropic API key &mdash; are stored as server-side environment variables and never ship in
-  the App bundle.</p>
-
-  <h2>8. Children</h2>
-  <p>Sleepr is not directed to children under 13, and we do not knowingly collect personal data
-  from children under 13. If you believe a child has provided us with personal data, please
-  contact us and we will delete it. Users between 13 and 15 in Denmark require parental consent
-  under section 6(3) of the Danish Data Protection Act.</p>
-
-  <h2>9. Changes to this policy</h2>
-  <p>We may update this Privacy Policy from time to time. When we make material changes, we will
-  notify you in the App or by email before the changes take effect. The &ldquo;Last updated&rdquo;
-  date at the top of this policy reflects the most recent revision.</p>
-
-  <h2>10. Contact us</h2>
-  <p>If you have any questions about this policy or how we handle your personal data, please
-  contact us:</p>
-  <p>
-    Mads Media<br>
-    CVR 46062299<br>
-    2500 Valby, Denmark<br>
-    Email: <a href="mailto:Madsthorsen76@gmail.com">Madsthorsen76@gmail.com</a>
-  </p>
-
+	<h1>Sleepr's Privacy Policy has moved</h1>
+	<p>
+		It now lives at
+		<a href="https://sleeprapp.org/privacy">sleeprapp.org/privacy</a>.
+		You'll be redirected automatically in a moment.
+	</p>
+	<p>
+		<a class="cta" href="https://sleeprapp.org/privacy">Go to the new Privacy Policy →</a>
+	</p>
+	<script>
+		// JS fallback for clients that ignore meta-refresh.
+		window.location.replace("https://sleeprapp.org/privacy");
+	</script>
 </body>
 </html>
